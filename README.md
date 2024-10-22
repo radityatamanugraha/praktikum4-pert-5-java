@@ -89,7 +89,7 @@ Penjelasan:
 - super.cetakInfo() memanggil method cetakInfo() dari kelas Pegawai.
 ```
 
-## • Programer.java
+## • Programmer.java
 ```java
 import java.text.DecimalFormat;
 
@@ -112,8 +112,53 @@ class Programmer extends Pegawai {
     }
 }
 ```
+### Penjelasan:
+```
+• Atribut:
+- bonus: menyimpan bonus untuk programmer.
+  
+• Method:
+- setBonus(): untuk menetapkan bonus programmer.
+- getBonus(): untuk mengambil bonus programmer.
+- cetakInfo(): menampilkan informasi dari kelas Pegawai dan menambahkan informasi tentang bonus.
+```
 
+# • Main.java
+```java
+public class Main {
+    public static void main(String[] args) {
+        Manager manager = new Manager();
+        manager.setNama("Radit");
+        manager.setGajiPokok(9000000);
+        manager.setTunjangan(5000000);
 
+        System.out.println("Informasi Manager:");
+        manager.cetakInfo(); 
+
+        System.out.println();
+
+        Programmer programmer = new Programmer();
+        programmer.setNama("Romi");
+        programmer.setGajiPokok(7000000);
+        programmer.setBonus(4000000);
+
+        System.out.println("Informasi Programmer:");
+        programmer.cetakInfo();
+    }
+}
+```
+### Penjelasan :
+```
+• Objek Manager:
+- Kita membuat objek Manager bernama manager.
+- Kemudian kita menetapkan nilai nama, gajiPokok, dan tunjangan.
+- Terakhir, kita mencetak informasi manager dengan cetakInfo().
+
+• Objek Programmer:
+- Kita membuat objek Programmer bernama programmer.
+- Kemudian kita menetapkan nilai nama, gajiPokok, dan bonus.
+- Terakhir, kita mencetak informasi programmer dengan cetakInfo().
+```
 
 
 
