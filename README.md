@@ -55,8 +55,6 @@ class Pegawai {
 
 ## • Manager.java
 ```java
-import java.text.DecimalFormat;
-
 class Manager extends Pegawai {
     private double tunjangan;
 
@@ -91,8 +89,6 @@ Penjelasan:
 
 ## • Programmer.java
 ```java
-import java.text.DecimalFormat;
-
 class Programmer extends Pegawai {
     private double bonus;
 
@@ -123,7 +119,7 @@ class Programmer extends Pegawai {
 - cetakInfo(): menampilkan informasi dari kelas Pegawai dan menambahkan informasi tentang bonus.
 ```
 
-# • Main.java
+## • Main.java
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -160,7 +156,8 @@ public class Main {
 - Terakhir, kita mencetak informasi programmer dengan cetakInfo().
 ```
 
-
+# Output
+![gambar](Tugas-Pemrograman-Orientasi-Objek-Pert-5/ss2.png)
 
 
 
