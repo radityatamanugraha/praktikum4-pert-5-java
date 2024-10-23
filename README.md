@@ -6,6 +6,110 @@
 
 ![gambar](Tugas-Pemrograman-Orientasi-Objek-Pert-5/ss1.jpeg)
 
+# • Lengkapi latihan class Mahasiswa dengan setter dan getter.
+
+## • Mahasiswa.java
+```java
+public class Mahasiswa extends Manusia {
+    String nim;
+    String jurusan;
+
+    public Mahasiswa(String nama, String jenisKelamin, int umur, String alamat, String nim, String jurusan) {
+        super(nama, jenisKelamin, umur, alamat);
+        this.nim = nim;
+        this.jurusan = jurusan;
+    }
+
+    public String getNim() {
+        return nim;
+    }
+
+    public void setNim(String nim) {
+        this.nim = nim;
+    }
+
+    public String getJurusan() {
+        return jurusan;
+    }
+
+    public void setJurusan(String jurusan) {
+        this.jurusan = jurusan;
+    }
+}
+```
+
+## • Manusia.java
+```java
+public class Manusia {
+    String nama;
+    String jenisKelamin;
+    int umur;
+    String alamat;
+
+    public Manusia(String nama, String jenisKelamin, int umur, String alamat) {
+        this.nama = nama;
+        this.jenisKelamin = jenisKelamin;
+        this.umur = umur;
+        this.alamat = alamat;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getJenisKelamin() {
+        return jenisKelamin;
+    }
+
+    public void setJenisKelamin(String jenisKelamin) {
+        this.jenisKelamin = jenisKelamin;
+    }
+
+    public int getUmur() {
+        return umur;
+    }
+
+    public void setUmur(int umur) {
+        this.umur = umur;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public void cetakInfo() {
+        System.out.println("Nama            : " + this.nama);
+        System.out.println("Jenis Kelamin   : " + this.jenisKelamin);
+        System.out.println("Umur            : " + this.umur);
+        System.out.println("Alamat          : " + this.alamat);
+    }
+}
+```
+
+## • MahasiswaBeraksi.java
+```java
+public class MahasiswaBeraksi {
+    public static void main(String[] args) {
+        Mahasiswa radit = new Mahasiswa("Radityatama Nugraha", "Laki-Laki", 18, "Cikarang Selatan", "312310644", "Teknik Informatika");
+
+        radit.cetakInfo();
+        System.out.println("NIM             : " + radit.getNim());
+        System.out.println("Jurusan         : " + radit.getJurusan());
+    }
+}
+```
+
+# Output
+![gambar](Mahasiswa/ss3.png)
+
 # • Implementasikan java code diagram class berikut :
 
 ## • Pegawai.java
